@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif
+}
+
+.main {
+    background-color: #06011c;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    animation: topEffect 0.7s normal 0.5s ease-in-out forwards;
+}
+
+.logo {
+    display: flex;
+    padding-top: 10px;
+}
+
+.logo img {
+    height: 50;
+}
+
+.logo h3 {
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding-top: 33px;
+    padding-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+}
+
+@keyframes topEffect {
+    from {
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.search {
+    padding-top: 33px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 150vh;
+    width: 200px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: none;
+}
+
+.menuButton {
+    display: none;
+}
+
+.line hr {
+    margin-top: 10px;
+}
+
+.crypto {
+    background-image: url(../images/diamond_7.png), url(../images/shape.png), url(../images/diamond_8.png);
+    background-repeat: no-repeat;
+    background-position: top 6rem left, top 5rem right 5rem, top 15rem right;
+    background-size: auto, 80px 50px, auto;
+}
+
+.made {
+    display: flex;
+    gap: 5rem;
+}
+
+.easy {
+    padding-top: 13rem;
+    text-shadow: 5px 5px#815098;
+}
+
+.getStarted {
+    padding-left: 7rem;
+    position: relative;
+}
+
+.getStarted h3 {
+    padding-top: 5rem;
+}
+
+.easy h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+.getStartedHidden {
+    display: none;
+}
+
+.started {
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.started:hover, .learn:hover {
+    background-color: #815098;
+    
+}
+
+.learn {
+    background-color: #06011c;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.deskImage {
+    margin-top: 5rem;
+}
+
+.deskImage img {
+    height: 450px;
+}
+
+
+.decentralized {
+    margin-top: 12rem;
+}
+
+
+.rectangle {
+    box-shadow: 5px 5px 5px 10px#815098;
+}
+
+.decentralized h2 {
+    margin-top: 40px;
+}
+
+.decentralizedPara {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.horizontalLine hr {
+    margin-top: 3rem;
+}
+
+.standFor {
+    background-image: url(../images/vector_smart_object_doubl_9.png), url(../images/shape_14.png), url(../images/vector_smart_object_doubl_2.png);
+    background-repeat: no-repeat;
+    background-position: top 2rem left 2rem, top 2rem center, top 2rem right 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.standForImageOne {
+    padding-top: 28rem;
+}
+
+.standForText {
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.standForHead {
+    padding-top: 2rem;
+    line-height: 0.9;
+}
+
+.standForHead h1 {
+    font-size: 85px;
+    font-weight: 500;
+    text-shadow: 5px 5px#815098;
+}
+
+.standForPara {
+    padding-top: 2rem;
+    font-size: 11px;
+}
+
+.standForImageTwo {
+    padding-top: 12rem;
+}
+
+.standForHiddenImageOne, .standForHiddenImageTwo {
+    display: none;
+}
+
+.horizontalLineTwo {
+    margin-top: 6rem;
+}
+
+.features {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.features h1 {
+    font-size: 60px;
+    font-weight: 550;
+    text-shadow: 5px 5px#815098;
+}
+
+.featuresDisplay {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.featuresDisplayContent {
+    padding-top: 8rem;
+}
+
+.horizontal {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 23rem;
+    z-index: 1;
+}
+
+
+.versatile p, .transparent p, .easyToUSe p, .realTime p, .transparentHidden p, .easyToUSeHidden p{
+    font-size: 12px;
+}
+
+.transparent, .easyToUSe, .realTime {
+    padding-top: 15rem;
+}
+
+.easyToUSe, .transparentHidden {
+    display: none;
+}
+
+.form {
+    background-color: white;
+    height: 40rem;
+    width: 20rem;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    box-shadow: 5px 5px 5px 10px#815098;
+}
+
+.form:hover {
+    background-color: black;
+    color: white;
+}
+
+.form img {
+    padding-top: 2rem;
+}
+
+.form h2 {
+    margin-top: 3rem;
+}
+
+.formEuro {
+    margin-top: 1rem;
+}
+
+.formEuro h5 {
+    padding-top: 10px;
+    text-align: start;
+    padding-left: 50px;
+}
+
+.formEuro input {
+    margin-top: 10px;
+    height: 30px;
+    width: 230px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.total {
+    padding-top: 4rem;
+}
+
+.line {
+    padding-top: 10px;
+}
+
+.form button {
+    margin-top: 3rem;
+    background-color: #06011c;
+    border: none;
+    height: 40px;
+    width: 120px;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #815098;  
+}
+
+.formFooter {
+    padding-top: 2rem;
+    display: flex;
+    font-size: 15px;
+    color: #5f6060;
+    justify-content: space-evenly;
+}
+
+.trading {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    background-color: #e7e8e8;
+    height: 48rem;
+    background-image: url(../images/shape_4.png), url(../images/shape_4.png), url(../images/diamond_5.png), url(../images/diamond_6.png), url(../images/shape_4.png);
+    background-repeat: no-repeat;
+    background-position: top 5rem left 5rem, top 8rem left 5rem, top 5rem right, bottom left, bottom 4rem right 2rem;
+    background-size: 80px 50px, 80px 50px, auto, auto;
+    color: black;
+    
+}
+
+.tradingEasy {
+    margin-top: 13rem;
+}
+
+.tradingEasy h1 {
+    font-size: 90px;
+    font-weight: 550;
+}
+
+.tradingEasyPara {
+    padding-top: 30px;
+}
+
+.tradingEasyPara p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.trading button {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.trading button:hover {
+    background-color: #815098;  
+}
+
+.tradingImage {
+    display: flex;
+    padding-top: 5rem;
+    border: 1px solid black;
+}
+
+.tradingImageHidden {
+    display: none;
+}
+
+.tradingImage img {
+    width: 350px;
+    height: 600px;
+}
+
+.trading hr {
+    border: 1px solid black;
+}
+
+.market {
+    display: flex;
+    background-image: url(../images/shape_7.png), url(../images/shape_7.png), url(../images/shape_7.png);
+    background-repeat: no-repeat;
+    background-position: top 5rem right 5rem, bottom 2rem right 5rem, bottom 2rem right 11rem;
+    background-size: 80px 50px;
+    gap: 6rem;
+}
+
+
+.marketImage img {
+    height: 700px;
+    width: 470px;
+    box-shadow: 5px 5px#815098;
+}
+
+.marketText {
+    text-align: center;
+    padding-top: 13rem;
+}
+
+.marketText h1 {
+    font-size: 90px;
+    font-weight: 500;
+    text-shadow: 5px 5px#815098;
+}
+
+.marketTextPara {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.marketText button {
+    background-color: #06011c;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.marketText button:hover {
+    background-color: #815098;
+
+}
+
+.marketImageHidden {
+    display: none;
+}
+
+.learnBest {
+    margin-top: 8rem;
+    text-align: center;
+    
+}
+
+.learnBest h1 {
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 5px 5px#815098;
+}
+
+.platform {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.platformHead {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.floating:hover {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.benefits {
+    background-color: #e7e8e8;
+    height: 40rem;
+    width: 100%;
+    margin-top: 5rem;
+    background-image: url(../images/diamond_3.png), url(../images/shape_4.png), url(../images/shape_4.png), url(../images/shape_4.png), url(../images/diamond_4.png);
+    background-repeat: no-repeat;
+    background-position: top 4rem left, top 4rem right 4rem, top 7rem right 4rem, bottom 2rem left 4rem, bottom right;
+    background-size: auto, 80px 50px, 80px 50px, 80px 50px, auto;
+    color: black;
+}
+
+.ipsum {
+    padding: 20px;
+}
+
+.ipsum:hover {
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 20px;
+}
+
+
+.benefitsHead {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.benefitsHead h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.benefitsText {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.benefitsPara {
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.testimonials {
+    background-image: url(../images/shape.png), url(../images/shape.png), url(../images/diamond.png), url(../images/diamond.png), url(../images/shape.png);
+    background-repeat: no-repeat;
+    background-position: top 5rem left 4rem, top 5rem left 9rem, top 5rem right 4rem, bottom 0rem left 4rem, bottom 0rem right 4rem;
+    background-size: 80px 50px, 80px 50px, auto, auto, 80px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testimonialsHead {
+    padding-top: 12rem;
+}
+
+.testimonialsHead h1 {
+    font-size: 90px;
+    font-weight: 550;
+    text-shadow: 5px 5px#815098;
+}
+
+.testimonialsHead h3 {
+    padding-top: 20px;
+}
+
+.testimonialsPara {
+    padding-top: 6rem;
+}
+
+.testimonialsPara p {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.testimonialsPara h3 {
+    padding-top: 10px;
+}
+
+.users {
+    padding-top: 3rem;
+}
+
+.arrow {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7rem;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.coinmyte {
+    padding-top: 15px;
+}
+
+.coinmyte p {
+    padding-top: 5px;
+}
+
+.copyright {
+    padding-top: 3rem;
+    padding-left: 10.5rem;
+    height: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .made {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .getStarted {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .getStartedHidden {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .easy {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .easy h1 {
+        text-align: center;
+    }
+
+    .deskImage {
+        display: none;  
+    }
+
+    .decentralized {
+        margin: auto;
+        text-align: center;
+        
+    }
+
+    .standForHiddenImageTwo {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .standForImageTwo {
+        display: none;
+    }
+
+    .market {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marketImage {
+        display: none;
+    }
+
+    .marketImageHidden {
+        display: block;
+    }
+
+    .marketImageHidden img {
+        height: 500px;
+        padding-top: 2rem;
+    }
+
+    .marketText {
+        padding-top: 3rem;
+    }
+
+    .caps {
+        margin-top: 2rem;
+    }
+
+    .benefits {
+        height: 45rem;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .realTime {
+        padding-top: 3rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hideonMobile, .search {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    nav li {
+        padding-right: 0;
+    }
+
+    .trading {
+        text-align: center;
+        height: 66rem;
+    }
+
+    .tradingEasy {
+        margin-top: 2rem;
+    }
+
+    .tradingImage {
+        display: none;
+    }
+
+    .tradingImageHidden {
+        display: block;
+    }
+
+    .tradingImageHidden img {
+        height: 500px;
+        padding-top: 2rem;
+    }
+
+    .learnBest {
+        margin-top: 2rem;
+    }
+
+    .platform {
+        margin-top: 0;
+    }
+
+    .platformImage {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+    .standForImageOne {
+        display: none;
+    }
+
+    .standForHiddenImageOne {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .standForText {
+        padding-top: 8rem;
+    }
+
+    .easyToUSe, .transparentHidden {
+        display: block;
+    }
+
+    .transparent, .easyToUSeHidden {
+        display: none;
+    }
+
+    .benefits {
+        height: 50rem;
+    }
+
+    .benefitsText {
+        padding-top: 0rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ipsum {
+        padding-top: 2rem;
+    }
+
+    .testimonials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonialsHead {
+        padding-top: 2rem;
+    }
+
+    .testimonialsPara {
+        padding-top: 3rem;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .getStartedHidden img {
+        height: 400px;
+    }
+    
+    .standForHead h1 {
+        font-size: 55px;
+    }
+
+    .standForPara {
+        width: 80%;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .featuresDisplayContent {
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .form {
+        margin-top: 2rem;
+    }
+
+    .easyToUSe {
+        padding-top: 2rem;
+    }
+
+    .horizontal {
+        display: none;
+    }
+
+    .featuresDisplay {
+        margin-top: 0rem;
+    }
+
+    .tradingEasy h1 {
+        font-size: 50px;
+        font-weight: 550;
+    }
+
+    .tradingEasyPara p {
+        width: 70%;
+        margin: auto;
+    }
+
+    .marketText h1 {
+        font-size: 50px;
+    }
+
+    .marketTextPara {
+        width: 70%;
+        margin: auto;
+    }
+
+    .platformImage {
+        height: 200px;
+    }
+
+
+    .copyright {
+        padding-left: 0rem;
+        text-align: center;
+    }   
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .benefits {
+        height: 55rem;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+        text-align: center;
+    }
+
+    .footer h3 {
+        padding-top: 2rem;
+    }
+
+    .testimonials, .crypto, .trading, .benefits, .market{
+        background-image: none;
+    }
+
+    .benefitsHead {
+        padding-top: 5rem;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+    .trading {
+        height: 50rem;
+    }
+
+    .tradingImageHidden img, .marketImageHidden img {
+        height: 300px;
+        padding-top: 2rem;
+    }
+
+    .platformImage{
+        height: 150px;
+    }
+
+
+    .testimonialsHead h1 {
+        font-size: 60px;
+        
+    }
+}
